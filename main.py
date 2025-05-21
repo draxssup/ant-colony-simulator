@@ -4,7 +4,8 @@ from colony.ant import Ant
 
 def main():
     env = Environment(width=20, height=20, num_ants=10)
-    env.run_simulation(steps=100)
+    env.run_simulation(steps=1000)
+    print("Max pheromone:", env.pheromones.max())
 
 
 if __name__ == "__main__":
